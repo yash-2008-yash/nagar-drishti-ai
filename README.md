@@ -15,12 +15,10 @@
 </p>
 
 <p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-app-preview">Preview</a> •
-  <a href="#-tech-stack">Tech Stack</a> •
-  <a href="#-getting-started">Getting Started</a> •
-  <a href="#-what-i-learned">What I Learned</a> •
-  <a href="#-contributing">Contributing</a>
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#features">Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#contribution">Contribution</a>
 </p>
 
 ---
