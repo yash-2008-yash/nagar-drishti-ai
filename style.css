@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --bg: #0a0e14;
+  --text: #e6edf3;
+  --muted: #8b98a5;
+  --accent-1: #2dd4bf;
+  --accent-2: #38bdf8;
+  --line: rgba(255, 255, 255, 0.10);
+}
+
+/* Base */
+html,
+body,
+[class*="css"],
+.stApp {
+  color: var(--text);
+}
+
+.stApp {
+  background:
+    radial-gradient(900px 500px at 15% -10%, rgba(45, 212, 191, 0.10), transparent 60%),
+    radial-gradient(800px 500px at 100% 0%, rgba(56, 189, 248, 0.09), transparent 60%),
+    var(--bg);
+}
+
+.block-container {
+  max-width: 1050px;
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+/* Hide default Streamlit chrome */
+#MainMenu,
+footer,
+header[data-testid="stHeader"] {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.hero h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.6rem 0;
+  padding: 0;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero .tagline {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--text);
+  opacity: 0.85;
+  margin-bottom: 0.7rem;
+}
+
+.hero .team {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* File uploader */
+[data-testid="stFileUploaderDropzone"] {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1.5px dashed rgba(45, 212, 191, 0.45);
+  border-radius: 18px;
+  padding: 2.2rem 1.5rem;
+  transition: all 0.25s ease;
+}
+
+[data-testid="stFileUploaderDropzone"]:hover {
+  border-color: var(--accent-2);
+  background: rgba(56, 189, 248, 0.05);
+}
+
+[data-testid="stFileUploaderDropzone"] button {
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+}
+
+[data-testid="stFileUploaderDropzone"] button:hover {
+  border-color: var(--accent-1);
+  color: var(--accent-1);
+}
+
+[data-testid="stFileUploader"] label p {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Primary button */
+button[kind="primary"],
+button[data-testid="stBaseButton-primary"] {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: #04121a;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  padding: 0.65rem 2rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button[kind="primary"]:hover,
+button[data-testid="stBaseButton-primary"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 26px rgba(45, 212, 191, 0.30);
+  color: #04121a;
+}
+
+/* Download button (secondary) */
+button[data-testid="stBaseButton-secondary"] {
+  border-radius: 999px;
+  border: 1px solid var(--accent-1);
+  background: transparent;
+  color: var(--accent-1);
+  font-weight: 600;
+  padding: 0.55rem 1.6rem;
+}
+
+button[data-testid="stBaseButton-secondary"]:hover {
+  background: rgba(45, 212, 191, 0.10);
+  color: var(--accent-1);
+  border-color: var(--accent-1);
+}
+
+/* Metrics (plain numbers, no boxes) */
+[data-testid="stMetric"] {
+  background: none;
+  border: none;
+  padding: 0.4rem 0;
+}
+
+[data-testid="stMetricLabel"] p {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+[data-testid="stMetricValue"] {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Images and video */
+[data-testid="stImage"] img,
+[data-testid="stVideo"] video {
+  border-radius: 16px;
+}
+
+[data-testid="stImageCaption"],
+[data-testid="stCaptionContainer"] {
+  color: var(--muted);
+}
+
+/* Progress bar */
+[data-testid="stProgress"] [role="progressbar"]>div,
+.stProgress>div>div>div>div {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+}
+
+/* Alerts */
+[data-testid="stAlert"] {
+  border-radius: 14px;
+}
