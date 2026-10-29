@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <img alt="Nagar Drishti AI" src="./assets/logo.png" width="350" style="max-width: 100%;">
+    <img alt="Nagar Drishti AI" src="./assets/nagar-drishti-logo.png" width="350" style="max-width: 100%;">
   </picture>
 </p>
 
